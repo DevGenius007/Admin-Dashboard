@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devxonic Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1>devxonic.</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Dashboard</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Invoice</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="profile-pic.png" alt="Profile Picture">
+            <h2>Muhammad Maaz</h2>
+            <p>Developer</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <h2>Dashboard</h2>
+        </div>
+        <div class="stats-cards">
+            <div class="card">
+                <h3>183</h3>
+                <p>Completed Projects</p>
+            </div>
+            <div class="card">
+                <h3>214</h3>
+                <p>Ongoing Projects</p>
+            </div>
+            <div class="card">
+                <h3>34</h3>
+                <p>New Clients</p>
+            </div>
+            <div class="card">
+                <h3>21</h3>
+                <p>Unfinished Projects</p>
+            </div>
+        </div>
+        <div class="analytics-reports">
+            <div class="analytics">
+                <h3>Analytics</h3>
+                <div class="donut-chart">
+                    <div class="circle">
+                        <div class="mask full" id="mask-full"></div>
+                        <div class="mask half">
+                            <div class="fill" id="fill-half"></div>
+                        </div>
+                        <div class="inside-circle">$15,345</div>
+                    </div>
+                </div>
+                <ul class="analytics-legend">
+                    <li><span class="dot front-end"></span> Front End Services</li>
+                    <li><span class="dot back-end"></span> Back End Services</li>
+                    <li><span class="dot ui-design"></span> UI Design</li>
+                </ul>
+            </div>
+            <div class="reports">
+                <h3>Reports</h3>
+                <div class="line-chart">
+                    <svg width="100%" height="100%" viewBox="0 0 320 120">
+                        <polyline points="0,80 40,40 80,60 120,20 160,80 200,60 240,100 280,80 320,120"
+                                  style="fill:none;stroke:#7b61ff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="orders-section">
+            <div class="recent-orders">
+                <h3>Recent Orders</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Client</th>
+                            <th>Service</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#12345</td>
+                            <td>Kickers</td>
+                            <td>Front End Development</td>
+                            <td><span class="status completed">Completed</span></td>
+                            <td>200,000 PKR</td>
+                        </tr>
+                        <tr>
+                            <td>#12346</td>
+                            <td>Accenture</td>
+                            <td>Back End Development</td>
+                            <td><span class="status ongoing">Ongoing</span></td>
+                            <td>1,324 $</td>
+                        </tr>
+                        <tr>
+                            <td>#12347</td>
+                            <td>Uber</td>
+                            <td>UI Design</td>
+                            <td><span class="status completed">Completed</span></td>
+                            <td>200,000 PKR</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="highest-order">
+                <h3>Highest Order</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Kickers</td>
+                            <td>200,000 PKR</td>
+                        </tr>
+                        <tr>
+                            <td>Accenture</td>
+                            <td>1,324 $</td>
+                        </tr>
+                        <tr>
+                            <td>Uber</td>
+                            <td>200,000 PKR</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
